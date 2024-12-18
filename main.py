@@ -47,10 +47,10 @@ if __name__ == "__main__":
     # Sample command ...
     """
     python with_ascii/main.py \
-        -MF "with_ascii/images/imports/saturn-07.jpg" \
-        -C 200 \
-        -S 70 \
-        -OF "with_ascii/images/exports/saturn-07.txt" \
-        -BW n
+        -MF "with_ascii/images/imports/statue-of-liberty-02.png" \
+        -C 80 \
+        -S 35 \
+        -OF "with_ascii/images/imports/statue-of-liberty-02-bw.txt" \
+        -BW y
     """
     main()
