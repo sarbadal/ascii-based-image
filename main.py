@@ -46,7 +46,7 @@ def main() -> None:
 if __name__ == "__main__":
     # Sample command ...
     """
-    python with_ascii/main.py \
+    python main.py \
         -MF "with_ascii/images/imports/statue-of-liberty-02.png" \
         -C 80 \
         -S 35 \
