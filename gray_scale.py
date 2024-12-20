@@ -32,15 +32,17 @@ class AsciiImage:
 
 
 def get_gray_scale_value(value: int|float, black_to_while: bool = True, more_levels: bool = True) -> str:
-
+    """ Read and return the ascii letter based on the value. """
+    max_level_idx = int((value * 69) / 255)
+    min_level_idx = int((value * 9) / 255)
     if black_to_while:
         if more_levels:
-            return GrayScaleStr.GRAY_SCALE_70_BLACK_TO_WHITE[int((value * 69)/255)] 
-        return GrayScaleStr.GRAY_SCALE_10_BLACK_TO_WHITE[int((value * 9)/255)]
+            return GrayScaleStr.GRAY_SCALE_70_BLACK_TO_WHITE[max_level_idx]
+        return GrayScaleStr.GRAY_SCALE_10_BLACK_TO_WHITE[min_level_idx]
     
     if more_levels:
-        return GrayScaleStr.GRAY_SCALE_70_WHITE_TO_BLACK[int((value * 69)/255)] 
-    return GrayScaleStr.GRAY_SCALE_10_WHITE_TO_BLACK[int((value * 9)/255)]
+        return GrayScaleStr.GRAY_SCALE_70_WHITE_TO_BLACK[max_level_idx]
+    return GrayScaleStr.GRAY_SCALE_10_WHITE_TO_BLACK[min_level_idx]
 
 
 if __name__ == "__main__":
