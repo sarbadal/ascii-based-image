@@ -1,3 +1,6 @@
+<p align="center"> <img src="src/logo/ascii-image-logo-transparent.png" alt="ascii-image logo" width="320" /> 
+</p>
+
 # ascii-image
 
 Convert images into clean ASCII art from the command line.
