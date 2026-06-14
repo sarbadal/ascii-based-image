@@ -1,2 +1,5 @@
 pandas>=2.2.3
 pillow>=11.0.0
+mypy>=2.1.0
+mypy_extensions>=1.1.0
+pandas-stubs>=3.0.0
