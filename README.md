@@ -1,4 +1,4 @@
-<p align="center"> <img src="src/logo/ascii-image-logo-transparent.png" alt="ascii-image logo" width="320" /> 
+<p align="center"> <img src="src/logo/ascii-image-logo-transparent.png" alt="ascii-image logo" width="200" /> 
 </p>
 
 # ascii-image
