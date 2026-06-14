@@ -1,6 +1,13 @@
 # ascii-image
 
-A Python package and CLI to convert an input image into ASCII art.
+Convert images into clean ASCII art from the command line.
+
+ascii-image is a Python package and CLI that transforms JPG, PNG, and other common image formats into grayscale ASCII text.  
+It can export both:
+- ASCII art as `.txt`
+- Luminance grid data as `.csv`
+
+Built with Pillow and pandas, it is useful for terminal art, creative coding, and image-data experiments.
 
 ## Features
 
