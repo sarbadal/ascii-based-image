@@ -30,7 +30,7 @@ class AsciiImage:
         img: NDArray[np.float64] = np.asarray(image, dtype=np.float64)
         return float(img.mean())
 
-    def convert_to_ascii(self, value: int | float, black_to_white: bool = True, more_levels: bool = True) -> list[str]:
+    def convert_to_ascii(self, value: int | float, black_to_white: bool = True, more_levels: bool = True) -> str:
         """Convert the image to ascii."""
         max_level_idx = int((value * 69) / 255)
         min_level_idx = int((value * 9) / 255)

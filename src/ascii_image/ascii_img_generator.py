@@ -1,12 +1,14 @@
 import pandas as pd
 from pathlib import Path
 from PIL import Image
-from typing import Callable
+from typing import Protocol
 
 from .gray_scale import AsciiImage
 
 
-GrayScaleVal = Callable[[int|float, bool, bool], str]
+class GrayScaleVal(Protocol):
+    def __call__(self, value: int | float, black_to_white: bool = True, more_levels: bool = True) -> str: 
+        ...
 
 
 def load_image_into_gscale(image_file: str) -> Image.Image:
